@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:RxSwiftPractice.xcodeproj">
+      location = "self:/Users/yukiyo/git/RxSwiftPractice/DevDaysSpeakers.xcodeproj">
    </FileRef>
 </Workspace>

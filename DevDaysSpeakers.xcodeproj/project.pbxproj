@@ -7,21 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2B01ACBB20402AD1004B032D /* SpeakerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2B01ACBA20402AD1004B032D /* SpeakerCell.swift */; };
+		2BB56A8520403106000E78C4 /* Speaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BB56A8420403106000E78C4 /* Speaker.swift */; };
 		2BE58FEC203D79A60015E125 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE58FEB203D79A60015E125 /* AppDelegate.swift */; };
 		2BE58FEE203D79A60015E125 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE58FED203D79A60015E125 /* ViewController.swift */; };
 		2BE58FF1203D79A60015E125 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BE58FEF203D79A60015E125 /* Main.storyboard */; };
 		2BE58FF3203D79A60015E125 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2BE58FF2203D79A60015E125 /* Assets.xcassets */; };
 		2BE58FF6203D79A60015E125 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2BE58FF4203D79A60015E125 /* LaunchScreen.storyboard */; };
+		2BE59001203D7DF10015E125 /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BE59000203D7DF10015E125 /* RxSwift.framework */; };
+		2BE59003203D7DFD0015E125 /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2BE59002203D7DFD0015E125 /* RxCocoa.framework */; };
+		2BE59006203D7F190015E125 /* Wireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BE59005203D7F190015E125 /* Wireframe.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		2BE58FE8203D79A50015E125 /* RxSwiftPractice.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftPractice.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2B01ACBA20402AD1004B032D /* SpeakerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeakerCell.swift; sourceTree = "<group>"; };
+		2BB56A8420403106000E78C4 /* Speaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Speaker.swift; sourceTree = "<group>"; };
+		2BE58FE8203D79A50015E125 /* DevDaysSpeakers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DevDaysSpeakers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2BE58FEB203D79A60015E125 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2BE58FED203D79A60015E125 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2BE58FF0203D79A60015E125 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2BE58FF2203D79A60015E125 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2BE58FF5203D79A60015E125 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2BE58FF7203D79A60015E125 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2BE59000203D7DF10015E125 /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
+		2BE59002203D7DFD0015E125 /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
+		2BE59005203D7F190015E125 /* Wireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wireframe.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +39,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2BE59003203D7DFD0015E125 /* RxCocoa.framework in Frameworks */,
+				2BE59001203D7DF10015E125 /* RxSwift.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -38,50 +50,64 @@
 		2BE58FDF203D79A50015E125 = {
 			isa = PBXGroup;
 			children = (
-				2BE58FEA203D79A50015E125 /* RxSwiftPractice */,
+				2BE58FEA203D79A50015E125 /* DevDaysSpeakers */,
 				2BE58FE9203D79A50015E125 /* Products */,
+				2BE58FFF203D7DF10015E125 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		2BE58FE9203D79A50015E125 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2BE58FE8203D79A50015E125 /* RxSwiftPractice.app */,
+				2BE58FE8203D79A50015E125 /* DevDaysSpeakers.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		2BE58FEA203D79A50015E125 /* RxSwiftPractice */ = {
+		2BE58FEA203D79A50015E125 /* DevDaysSpeakers */ = {
 			isa = PBXGroup;
 			children = (
 				2BE58FEB203D79A60015E125 /* AppDelegate.swift */,
 				2BE58FED203D79A60015E125 /* ViewController.swift */,
+				2B01ACBA20402AD1004B032D /* SpeakerCell.swift */,
 				2BE58FEF203D79A60015E125 /* Main.storyboard */,
 				2BE58FF2203D79A60015E125 /* Assets.xcassets */,
 				2BE58FF4203D79A60015E125 /* LaunchScreen.storyboard */,
 				2BE58FF7203D79A60015E125 /* Info.plist */,
+				2BE59005203D7F190015E125 /* Wireframe.swift */,
+				2BB56A8420403106000E78C4 /* Speaker.swift */,
 			);
-			path = RxSwiftPractice;
+			path = DevDaysSpeakers;
+			sourceTree = "<group>";
+		};
+		2BE58FFF203D7DF10015E125 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2BE59002203D7DFD0015E125 /* RxCocoa.framework */,
+				2BE59000203D7DF10015E125 /* RxSwift.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2BE58FE7203D79A50015E125 /* RxSwiftPractice */ = {
+		2BE58FE7203D79A50015E125 /* DevDaysSpeakers */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2BE58FFA203D79A60015E125 /* Build configuration list for PBXNativeTarget "RxSwiftPractice" */;
+			buildConfigurationList = 2BE58FFA203D79A60015E125 /* Build configuration list for PBXNativeTarget "DevDaysSpeakers" */;
 			buildPhases = (
 				2BE58FE4203D79A50015E125 /* Sources */,
 				2BE58FE5203D79A50015E125 /* Frameworks */,
 				2BE58FE6203D79A50015E125 /* Resources */,
+				2BE59004203D7E2E0015E125 /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = RxSwiftPractice;
-			productName = RxSwiftPractice;
-			productReference = 2BE58FE8203D79A50015E125 /* RxSwiftPractice.app */;
+			name = DevDaysSpeakers;
+			productName = DevDaysSpeakers;
+			productReference = 2BE58FE8203D79A50015E125 /* DevDaysSpeakers.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -100,7 +126,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2BE58FE3203D79A50015E125 /* Build configuration list for PBXProject "RxSwiftPractice" */;
+			buildConfigurationList = 2BE58FE3203D79A50015E125 /* Build configuration list for PBXProject "DevDaysSpeakers" */;
 			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -113,7 +139,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2BE58FE7203D79A50015E125 /* RxSwiftPractice */,
+				2BE58FE7203D79A50015E125 /* DevDaysSpeakers */,
 			);
 		};
 /* End PBXProject section */
@@ -131,6 +157,24 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2BE59004203D7E2E0015E125 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/usr/local/bin/carthage copy-frameworks";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2BE58FE4203D79A50015E125 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -138,6 +182,9 @@
 			files = (
 				2BE58FEE203D79A60015E125 /* ViewController.swift in Sources */,
 				2BE58FEC203D79A60015E125 /* AppDelegate.swift in Sources */,
+				2BB56A8520403106000E78C4 /* Speaker.swift in Sources */,
+				2BE59006203D7F190015E125 /* Wireframe.swift in Sources */,
+				2B01ACBB20402AD1004B032D /* SpeakerCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,9 +322,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = RxSwiftPractice/Info.plist;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = DevDaysSpeakers/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.rikusouda.RxSwiftPractice;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rikusouda.DevDaysSpeakers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -289,9 +340,13 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = RxSwiftPractice/Info.plist;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
+				INFOPLIST_FILE = DevDaysSpeakers/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.rikusouda.RxSwiftPractice;
+				PRODUCT_BUNDLE_IDENTIFIER = com.rikusouda.DevDaysSpeakers;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -301,7 +356,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2BE58FE3203D79A50015E125 /* Build configuration list for PBXProject "RxSwiftPractice" */ = {
+		2BE58FE3203D79A50015E125 /* Build configuration list for PBXProject "DevDaysSpeakers" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2BE58FF8203D79A60015E125 /* Debug */,
@@ -310,7 +365,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2BE58FFA203D79A60015E125 /* Build configuration list for PBXNativeTarget "RxSwiftPractice" */ = {
+		2BE58FFA203D79A60015E125 /* Build configuration list for PBXNativeTarget "DevDaysSpeakers" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2BE58FFB203D79A60015E125 /* Debug */,
