@@ -9,4 +9,4 @@ https://github.com/xamarin/dev-days-labs/tree/master/HandsOnLab
 # Using
 
 * [RxSwift](https://github.com/ReactiveX/RxSwift)
-    * Also using [DefaultWireframe](https://github.com/ReactiveX/RxSwift/blob/master/RxExample/RxExample/Services/Wireframe.swift)
+    * Also using [DefaultWireframe](https://github.com/ReactiveX/RxSwift/blob/master/RxExample/RxExample/Services/Wireframe.swift) of sample
