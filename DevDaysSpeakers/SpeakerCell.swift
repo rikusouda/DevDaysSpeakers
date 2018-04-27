@@ -76,4 +76,11 @@ class SpeakerCell: UITableViewCell {
             return Disposables.create()
         }
     }
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
+        
+        self.iconImage.clipsToBounds = true
+        self.iconImage.layer.cornerRadius = self.iconImage.frame.size.width / 2.0
+    }
 }
