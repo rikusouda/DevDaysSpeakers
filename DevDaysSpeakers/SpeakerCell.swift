@@ -37,7 +37,10 @@ class SpeakerCell: UITableViewCell {
             .map { (speaker) -> URL? in
                 speaker.avatar != nil ? URL(string: speaker.avatar!) : nil
             }
-            .flatMap { (avatarURLString) -> Driver<UIImage?> in
+            .do(onNext: { (_) in
+                self.iconImage.image = nil
+            }, onCompleted: nil, onSubscribe: nil, onSubscribed: nil, onDispose: nil)
+            .flatMapLatest { (avatarURLString) -> Driver<UIImage?> in
                 if let url = avatarURLString {
                     return SpeakerCell.loadAvaterImage(url: url)
                         .map { UIImage?.some($0) }
